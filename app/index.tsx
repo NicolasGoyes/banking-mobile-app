@@ -1,15 +1,11 @@
-import { Text, View } from "react-native";
+import { useState } from "react";
+import Splash from "./src/screens/Splash";
 
-export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
-  );
+export default function App() {
+
+  const [showSplash, setShowSplash] = useState(true);
+  if (showSplash){
+  return <Splash onFinish={() => setShowSplash(false)} />
+    
+  }         
 }
