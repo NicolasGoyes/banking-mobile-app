@@ -10,5 +10,5 @@ export default function App() {
   return <Splash onFinish={() => setShowSplash(false)} />
     
   }
-  return <Register/>         
+  return <Login/>         
 }

@@ -82,7 +82,7 @@ const Login: React.FC = () => {
       // login exitoso
       Alert.alert('Success', 'Signed in successfully');
       // Redirigir a la pantalla principal (ajusta la ruta según tu app)
-      router.push('./home');
+      router.push('/src/screens/Main');
     } catch (e: any) {
       const message = e?.message || 'Unknown error';
       console.error('Login failed:', e);
@@ -94,7 +94,7 @@ const Login: React.FC = () => {
 
   const goToRegister = () => {
     // Ajusta la ruta si tu archivo de register está en otra ruta
-    router.push('./Register');
+    router.push('/src/screens/Register');
   };
 
   return (
@@ -208,7 +208,7 @@ const styles = StyleSheet.create({
     marginBottom: 6,
   },
   input: {
-    backgroundColor: '#1f2937',
+    backgroundColor: '#1f2937ff',
     borderWidth: 1,
     borderColor: '#334155',
     borderRadius: 12,
